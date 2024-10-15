@@ -27,6 +27,8 @@ public:
     //! main window loop
     int run();
 
+    GLFWwindow* GetGLFWPointer();
+
 protected:
     //! this function is called when the scene has to be rendered. it
     //! clears the buffers, calls the draw() method, and performs buffer swap

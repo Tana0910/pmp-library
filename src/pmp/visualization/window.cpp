@@ -445,6 +445,11 @@ void Window::render_frame()
     glfwPollEvents();
 }
 
+GLFWwindow* Window::GetGLFWPointer()
+{
+    return window_;
+}
+
 void Window::glfw_error(int error, const char* description)
 {
     std::cerr << "error (" << error << "):" << description << std::endl;
